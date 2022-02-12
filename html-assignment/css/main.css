@@ -8,3 +8,8 @@ body {
 header, footer {
     background-color: #4dc4cf;
 }
+
+/* 0010 */ 
+.site-title {
+    color: white;
+}
