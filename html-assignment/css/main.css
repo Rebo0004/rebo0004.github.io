@@ -1,4 +1,10 @@
+/* 0001 */
 body {
     font-family: raleway;
     font-size: 18px;
+}
+
+/* 0002 */
+header, footer {
+    background-color: 2d2c2c;
 }
