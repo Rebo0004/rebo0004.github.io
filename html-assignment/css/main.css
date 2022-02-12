@@ -23,3 +23,8 @@ header, footer {
 .squares-bullets {
     list-style-type: square;
 }
+
+/* */
+li:nth-child(odd) {
+    background-color: #a58bed;
+}
