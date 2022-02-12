@@ -24,7 +24,18 @@ header, footer {
     list-style-type: square;
 }
 
-/* */
+/* 0011 */
 li:nth-child(odd) {
     background-color: #a58bed;
+}
+
+/* 0011 */ 
+.navbar a {
+    text-decoration: none; 
+    background-color: gainsboro;
+}
+
+/* 0111 */
+.navbar a:hover {
+    background-color:darkgrey;
 }
