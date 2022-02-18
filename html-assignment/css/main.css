@@ -33,6 +33,7 @@ li:nth-child(odd) {
 .navbar a {
     text-decoration: none; 
     background-color: gainsboro;
+    border-style: dotted;
 }
 
 /* 0111 */
