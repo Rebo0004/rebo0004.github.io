@@ -1,7 +1,85 @@
 body {
     background-color: #aad4cf;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
 }
 
+/*  */
 .wrapper {
+    max-width: 70%;
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255, .5);
+}
+
+/* Permits text overlay image, mix relative within container and absolute within the title*/
+.container {
+    position: relative;
+
+}
+
+header img {
+    width: 100%;
+}
+
+h1 {
+    color: #fff;
+    font-size: 3.5rem;
+    /* shows the title over the image*/
+    position: absolute;
+    /* Its a 100% within the 70% of the wrappper */ 
+    width: 100%;
+    top: 55%;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+h3 {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+nav a {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+section {
+    margin: 10px;
+    margin-bottom: 30px;
+}
+
+/* This class needs to be is in the parent section of a float image */
+.clearfix::after {
+    content: "";
+    display: block;
+    /* Clear weather right or left float image */
+    clear: both
+}
+
+section img {
+    width: 250px;
+    float: left; 
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+
+p {
+    line-height: 1.40rem;
+    padding-right: 10px;
+}
+
+ul li {
     
+}
+
+.border {
+    border-style: solid;
+    border-width: 1px;
+    padding: 10px;
 }
