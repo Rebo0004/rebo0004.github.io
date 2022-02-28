@@ -54,7 +54,7 @@ section {
     margin-bottom: 30px;
 }
 
-/* This class needs to be is in the parent section of a float image */
+/* This class needs to be in the parent section of a float image */
 .clearfix::after {
     content: "";
     display: block;
@@ -74,7 +74,9 @@ p {
     padding-right: 10px;
 }
 
-ul li {
+section ul {
+    list-style-type: disc;
+    padding-left: 20px;
     
 }
 
