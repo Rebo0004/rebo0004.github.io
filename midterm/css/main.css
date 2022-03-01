@@ -137,3 +137,12 @@ button {
     background-color: rgb(255, 255, 255, 0);
     border: 1px solid #000;
 }
+
+footer {
+    margin-bottom: 10px;
+}
+
+footer p {
+    text-align: right;
+    padding-bottom: 30px;
+}
