@@ -4,7 +4,7 @@ body {
     font-size: 16px;
 }
 
-/*  */
+/* Contains all the elements in the ligther blue */
 .wrapper {
     max-width: 70%;
     margin: 0 auto;
@@ -21,12 +21,11 @@ header img {
     width: 100%;
 }
 
+/* Absolute position shows the title on top of the image. The width its a 100% within the 70% of the wrappper*/
 h1 {
     color: #fff;
-    font-size: 3.5rem;
-    /* shows the title over the image*/
-    position: absolute;
-    /* Its a 100% within the 70% of the wrappper */ 
+    font-size: 3.5rem; 
+    position: absolute; 
     width: 100%;
     top: 45%;
     text-align: center;
@@ -52,7 +51,6 @@ h4 {
 
 /* The menu needs to work with a float property to be center into the page */ 
 nav li {
-    display: inline-block;
     float: left;
     width: 33.3%;
     padding-top: 10px;
@@ -61,8 +59,8 @@ nav li {
     text-align: center;
 }
 
+/* With border-box respects the 33.3% of the width with a border */
 .border-menu:nth-child(2) {
-    /* Respects the 33.3% of the width with a border */
     box-sizing: border-box;
     border-left: 1px solid #000;
     border-right: 1px solid #000;
@@ -82,12 +80,11 @@ section {
     margin-bottom: 30px;
 }
 
-/* This class needs to be in the parent section of a float image */
+/* This class needs to be in the parent section of a float image. Clear both is for weather right or left float image */
 .clearfix::after {
     content: "";
     display: block;
-    /* Clear weather right or left float image */
-    clear: both
+    clear: both;
 }
 
 section img {
@@ -119,17 +116,17 @@ section ul {
     padding-bottom: 10px;
 }
 
+/* display inline-block will allow to add a margin-bottom */
 label {
     font-size: 1rem;
-    /* display inline-block will allow to add a margin-bottom */
     display: inline-block; 
     margin-bottom: 7px;
     font-weight: 600;
 } 
 
-/* Needs the type to not change other inputs */
+/* Needs the type to not change other inputs. Border-box will fix the input width, make the margin and padding inside */
 input[type='text'] {
-    /* This property will fix the input width, make the margin and padding inside */
+    
     box-sizing: border-box;
     width: 100%;
     height: 25px;
