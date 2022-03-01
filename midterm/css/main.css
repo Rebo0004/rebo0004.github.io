@@ -28,7 +28,7 @@ h1 {
     position: absolute;
     /* Its a 100% within the 70% of the wrappper */ 
     width: 100%;
-    top: 55%;
+    top: 45%;
     text-align: center;
 }
 
@@ -50,9 +50,31 @@ h4 {
     margin-bottom: 20px;
 }
 
+/* The menu needs to work with a float property to be center into the page */ 
+nav li {
+    display: inline-block;
+    float: left;
+    width: 33.3%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.border-menu:nth-child(2) {
+    /* Respects the 33.3% of the width with a border */
+    box-sizing: border-box;
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+}
+
 nav a {
     list-style-type: none;
     text-decoration: none;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #000;
+    font-weight: 600;
 }
 
 section {
@@ -107,7 +129,7 @@ label {
 
 /* Needs the type to not change other inputs */
 input[type='text'] {
-    /* This property will fix the input width, no matter the margin or padding values */
+    /* This property will fix the input width, make the margin and padding inside */
     box-sizing: border-box;
     width: 100%;
     height: 25px;
@@ -143,6 +165,7 @@ footer {
 }
 
 footer p {
+    font-size: .75rem;
     text-align: right;
-    padding-bottom: 30px;
+    padding-bottom: 25px;
 }
