@@ -12,6 +12,7 @@ header {
     background-color: #222;
 }
 
+/* Padding needs to be in this tag because if its added to .menu will apply also to the elements inside */ 
 nav {
     padding: 10px 10px;
 }
