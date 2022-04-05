@@ -1,0 +1,61 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    margin: 0;
+}
+
+header {
+    background-color: #222;
+}
+
+nav {
+    padding: 10px 10px;
+}
+
+nav .logo-container {
+    background-color: #c78c06;
+}
+
+.menu {
+    background-color: #222;
+    padding: 0px 0px;
+}
+
+nav ul {
+    margin: 0px 0px;
+} 
+
+nav li {
+    list-style-type: none;
+    text-align: center;
+}
+
+.menu ul:nth-child(1) {
+    background-color: #c78c06;
+    color: #222;
+}
+
+nav a {
+    text-decoration: none;
+    color: #c78c06;
+}
+
+div .search-bar {
+    width: 100%;
+}
+
+nav input {
+    width: 90%;
+    height: 40px;
+    margin: 0px 0px;
+}
+
+nav button {
+    width:10%;
+    height: 40px;
+    margin: 0px 0px;
+}
