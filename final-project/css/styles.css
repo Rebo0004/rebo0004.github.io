@@ -157,15 +157,15 @@ h1 {
     font-size: .9rem;
     line-height: 1.5rem;
     padding-top: 20px;
-    padding-bottom: 50px;
 }
 
-/* this properties will affect all the buttons of the webpage*/
+/* this properties will affect all the buttons of the webpage. The inline-block will allow add margin to the anchor tag*/
 .btn {
     padding: 30px;
-    font-size: 1.3rem;
+    font-size: 1rem;
     font-weight: 500;
     text-decoration: none;
+    display: inline-block;
 }
 
 .secondary {
@@ -200,7 +200,7 @@ img {
 }
 
 h2 {
-    font-size: 3rem;
+    font-size: 2.8rem;
     font-weight: 700;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -215,3 +215,29 @@ p {
 }
 
 /* OUR SERVICES SECTION */
+
+/* This margin-bottom adds the space between each service section */
+.service {
+    background-color: #ffe6ac;
+    margin-bottom: 15px;
+}
+
+img {
+    width: 100%;
+}
+
+/* Adding padding like this will apply to all the services sections */
+div.service div {
+    padding: 15px;
+}
+
+h3 {
+    font-weight: 800;
+    font-size: 1.3rem;
+    padding-bottom: 1rem;
+}
+
+.dark {
+    background-color: #222;
+    color: #fff;
+}
