@@ -206,9 +206,12 @@ h2 {
     margin-bottom: 20px;
 }
 
+/* This basic style is gonna be applyied for all the paragraphs of the website */
 p {
     font-size: .9rem;
     font-weight: 500;
     line-height: 1.3rem;
     padding-bottom: 1rem;
 }
+
+/* OUR SERVICES SECTION */
