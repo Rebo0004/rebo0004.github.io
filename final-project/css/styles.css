@@ -2,28 +2,38 @@
     box-sizing: border-box;
 }
 
+/* The font size is definded in the body, and it will be changed only using rem to have a better control in the future */
 body {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     margin: 0;
 }
 
+/* HEADER SECTION */
+
 header {
     background-color: #222;
 }
 
+/* Add the padding here to not affect the child elements of the .menu class */
+header>div {
+    padding-top: 10px;
+}
+
 /* Padding needs to be in this tag because if its added to .menu will apply also to the elements inside */ 
 nav {
-    padding: 10px 10px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 nav .logo-container {
     background-color: #c78c06;
 }
 
+/* This class will affect all the elements, thats why the padding is nothere, it will give space between all the anchor tags */
 .menu {
     background-color: #222;
-    padding: 0px 0px;
+    padding-left: 0px;
 }
 
 nav ul {
@@ -33,17 +43,22 @@ nav ul {
 nav li {
     list-style-type: none;
     text-align: center;
-}
-
-.menu ul:nth-child(1) {
-    background-color: #c78c06;
-    color: #222;
+    padding: 20px 0px;
 }
 
 nav a {
     text-decoration: none;
     color: #c78c06;
 }
+
+/* Instead of doing this, try to change it in the active and hover properties of the buttons
+.menu li:nth-child(1) {
+    background-color: #c78c06;
+}
+
+/*.menu a:nth-child(1) {
+    color: #222;
+}*/
 
 div .search-bar {
     width: 100%;
@@ -59,4 +74,37 @@ nav button {
     width:10%;
     height: 40px;
     margin: 0px 0px;
+    background-color: #222;
+    border: 1px solid #c78c06;
+}
+
+.fa-magnifying-glass {
+    color: #c78c06;
+    font-size: 1.2rem;
+}
+
+/* Only the direct div child of the .main-banner will be affected*/
+.main-banner>div {
+    background-color: rgba(34,34,34,0.8);
+    height: 400px;
+}
+
+h1 {
+    color: #fff;
+    font-size: 4rem;
+}
+
+/* In this case it can not be direct child, because p is inside another div */ 
+.main-banner p {
+    color: #fff;
+}
+
+/* ask how to define the maximum width of 1200px and still being responsive because it doesn't work */
+.responsive-image {
+    width: 100%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }
