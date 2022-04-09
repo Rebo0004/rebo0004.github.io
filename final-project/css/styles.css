@@ -127,6 +127,7 @@ nav button {
     margin: 0px 0px;
     background-color: #222;
     border: 1px solid #c78c06;
+    
 }
 
 .fa-magnifying-glass {
@@ -137,33 +138,43 @@ nav button {
 /* Only the direct div child of the .main-banner will be affected*/
 .main-banner>div {
     background-color: rgba(34,34,34,0.8);
-    height: 400px;
     padding-left: 20px;
     padding-right: 20px;
+    padding-top: 80px;
+    padding-bottom: 50px;
 }
 
 h1 {
     color: #fff;
     font-size: 4rem;
     font-weight: bold;
+    line-height: 6rem;
 }
 
-/* In this case it can not be direct child, because p is inside another div */ 
+/* In this case it can not be direct child, because p is inside another div. The padding bottom to add space between the paragraph and the button need to be here because the anchor tag is a text not a button */ 
 .main-banner p {
     color: #fff;
+    font-size: .9rem;
+    line-height: 1.5rem;
+    padding-top: 20px;
+    padding-bottom: 50px;
 }
 
+/* this properties will affect all the buttons of the webpage*/
 .btn {
     padding: 30px;
     font-size: 1.3rem;
     text-decoration: none;
-    margin-bottom: 10px;
-    margin-top: 10px;
 }
 
 .secondary {
     background-color: #c78c06;
     color: #222;
+}
+
+.fa-caret-right {
+    padding-left: 10px;
+    font-size: 1.5rem;
 }
 
 /* ask how to define the maximum width of 1200px and still being responsive because it doesn't work */
