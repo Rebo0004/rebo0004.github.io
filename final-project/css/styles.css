@@ -262,3 +262,21 @@ div {
     color: #fff;
     border: 1px solid #c78c06;
 }
+
+/* OUR TEAM SECTION */
+
+.color-section {
+    padding: 15px;
+}
+
+.job {
+    font-weight: 800;
+    font-size: .8rem;
+    padding-bottom: 0px;
+}
+
+hr {
+    border: 1px solid #c78c06;
+    margin-top: 2px;
+    margin-bottom: 15px;
+}
