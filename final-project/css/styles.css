@@ -244,3 +244,21 @@ h3 {
     background-color: #222;
     color: #fff;
 }
+
+/* OUR VISION SECTION */ 
+
+.full-image {
+    width: 100%;
+    color: white;
+}
+
+/* Correct this one because it applyies the padding to the image too
+div {
+    padding: 15px;
+}*/
+
+.dark-secondary {
+    background-color: rgba(34,34,34,0.8);
+    color: #fff;
+    border: 1px solid #c78c06;
+}
