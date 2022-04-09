@@ -44,9 +44,9 @@
         </div>
     </header>
     <main>
-        <!-- Contains the About us section within a yellow background div -->
-        <section class="color-section">
-            <div class="wrapper about">
+        <!-- Contains the About us section within another div to add the full yellow background and keep it centered-->
+        <div class="color-section">
+            <section class="wrapper about">
                 <div class="block">
                     <img src="images/about-us.jpg" alt="about us">
                 </div>
@@ -55,9 +55,9 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis delectus porro accusantium molestiae perspiciatis repellat magni repudiandae quod, vel distinctio ut quos dolorum animi laudantium quo consequuntur, culpa ipsam? Odio.</p>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam, molestiae odio non reiciendis vitae aspernatur fugit. Laboriosam, nostrum fugit quis sunt tempora placeat quidem quo eos, doloremque, porro nihil molestiae.</p>
                 </div>
-            </div>
-        </section>
-        <!-- Contains the Services section with the 5 different services -->
+            </section>
+        </div>
+        <!-- Contains the Services section with the 5 different services inside their own div with an specific class to order them easier in a grid -->
         <div>
             <section class="wrapper services">
                 <h2>Our Services</h2>
@@ -126,13 +126,13 @@
                 </div>
             </section>
         </div>
-        <!-- Contains Contact section with a form, a google map and a table with the hours of operation-->
+        <!-- Contains Contact section with a form, a google map and a table within 3 differnt divs and classes to change the order in the css grid (desktop version)-->
         <div>
             <section class="wrapper contact">  
                 <h2>Contact Us</h2>
-                <div class="block">
+                <div class="message">
                     <h3>Send us a message</h3>
-                    <!-- Contains a form to contact us by e-mail-->
+                    <!-- Contains a form to contact us by e-mail, every div will manage the space between-->
                     <form>
                         <div>
                             <label for="name">Full name</label>
@@ -151,7 +151,7 @@
                         </div>
                     </form>
                 </div>
-                <div class="block">
+                <div class="hours">
                     <h3>Hours of operation</h3>
                     <!--Shows a responsive table-->
                     <table>
@@ -173,7 +173,7 @@
                         </tbody>
                     </table>
                 </div>
-                <div class="block">
+                <div class="map">
                     <h3>Location</h3>
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d106711.15732707671!2d-75.79328876555347!3d45.34563935847575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1648868142056!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
