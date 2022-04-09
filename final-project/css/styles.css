@@ -66,6 +66,10 @@ header {
     background-color: #222;
 }
 
+.logo-container img {
+width: 70px;
+}
+
 /* Add the padding here to not affect the child elements of the .menu class */
 header>div {
     padding-top: 15px;
@@ -127,7 +131,6 @@ nav button {
     margin: 0px 0px;
     background-color: #222;
     border: 1px solid #c78c06;
-    
 }
 
 .fa-magnifying-glass {
@@ -151,7 +154,7 @@ h1 {
     line-height: 6rem;
 }
 
-/* In this case it can not be direct child, because p is inside another div. The padding bottom to add space between the paragraph and the button need to be here because the anchor tag is a text not a button */ 
+/* In this case it can not be direct child, because p is inside another div. */ 
 .main-banner p {
     color: #fff;
     font-size: .9rem;
