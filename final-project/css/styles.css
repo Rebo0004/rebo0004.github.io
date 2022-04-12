@@ -134,16 +134,19 @@ nav li {
     text-align: center;
 }
 
+/* Change the colour when the mouse is hover the button*/
 nav a:hover {
     background-color: #c78c06;
     color: #222;
 }
 
+/*Change the colour when the user click on the button */
 nav a:active {
     background-color: #c78c06;
     color: #222;
 }
 
+/* Needs the type to not change other inputs */
 input[type='text'] {
     padding: 10px;
     font-size: 1.1rem;
