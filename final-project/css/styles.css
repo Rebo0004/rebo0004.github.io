@@ -153,13 +153,12 @@ input[type='text'] {
 }
 
 /* Only the direct div child of the .main-banner will be affected*/
-.main-banner>div {
-    background-color: rgba(34,34,34,0.8);
+/*.main-banner>div {
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 80px;
     padding-bottom: 50px;
-}
+}*/
 
 h1 {
     color: #fff;
@@ -177,11 +176,11 @@ h1 {
 
 /* this properties will affect all the buttons of the webpage. The inline-block will allow add margin to the anchor tag*/
 .btn {
+    display: inline-block;
     padding: 30px;
     font-size: 1rem;
     font-weight: 500;
-    text-decoration: none;
-    display: inline-block;
+    text-decoration: none;  
 }
 
 .secondary {
@@ -194,15 +193,48 @@ h1 {
     font-size: 1.5rem;
 }
 
-/* ask how to define the maximum width of 1200px and still being responsive because it doesn't work */
+.main-banner {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
+/* The maximum width of 1200px has been defined in the body tag */
 .responsive-image {
     width: 100%;
 }
 
+/* Having the same grid-row value overlaps the content */
 img {
     max-width: 100%;
     height: auto;
+    grid-column: 1/2;
+    grid-row: 1;
 }
+
+/* Margin auto property center the height. The rgb values come from #222 ASK ABOUT THIS CAUSE IN MOBILE IT DOESNT LOOK GOOD, it needs to be center and responsive*/
+.main-banner .dark-background {
+    grid-column: 1/2;
+    grid-row: 1;
+    height: 80%;
+    margin: auto;
+    background-color: rgba(34, 34, 34, 0.5);
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/*
+.dark-background div {
+    grid-column: 1/2;
+    grid-row: 1;
+    width: 100%;
+    height: 80%;
+    margin: auto;
+    background-color: #fff ;
+    padding: 10px;
+}*/
 
 /* ABOUT US SECTION */
 
