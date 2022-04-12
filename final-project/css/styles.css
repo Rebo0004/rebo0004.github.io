@@ -53,11 +53,12 @@ table {
     box-sizing: border-box;
 }
 
-/* The font size is definded in the body, and it will be changed only using rem to have a better control in the future */
+/* The font size is definded in the body, and it will be changed only using rem to have a better control in the future. The main container is the body, thats why the max-width of 1200px need to be here. */
 body {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     margin: 0;
+    max-width: 1200px;
 }
 
 /* HEADER SECTION */
@@ -81,17 +82,6 @@ header>div {
     padding-left: 0px;
 }
 
-nav li {
-    list-style-type: none;
-    text-align: center;
-    padding: 20px 0px;
-}
-
-nav a {
-    text-decoration: none;
-    color: #c78c06;
-}
-
 /* Display wrap allows to ghange the percentage of the flex-basis of all the elements inside the nav to distibute them correctly */
 /* Padding needs to be in this tag because if its added to .menu will apply also to the elements inside */ 
 nav {
@@ -110,7 +100,19 @@ nav ul {
     flex-basis: 100%;
 }
 
-/* 0px */
+/* The inline block, the flex-basis and the width here shows long buttons in the nav */
+nav a {
+    display: inline-block;
+    flex-basis: 100%;
+    width: 100%;
+    text-decoration: none;
+    font-size: 1rem;
+    color: #c78c06;
+    background-color: #222;
+    padding-bottom: 25px;
+    padding-top: 25px;
+}
+
 nav .search-bar {
     flex-basis: calc(90% - 0px);
     height: 40px;
@@ -127,19 +129,25 @@ nav .search-button {
     font-size: 1.2rem;
 }
 
-/* Instead of doing this, try to change it in the active and hover properties of the buttons
-.menu li:nth-child(1) {
-    background-color: #c78c06;
+nav li {
+    list-style-type: none;
+    text-align: center;
 }
 
-/*.menu a:nth-child(1) {
+nav a:hover {
+    background-color: #c78c06;
     color: #222;
-}*/
+}
 
-/*
-div .search-bar {
-    width: 100%;
-}*/
+nav a:active {
+    background-color: #c78c06;
+    color: #222;
+}
+
+input[type='text'] {
+    padding: 10px;
+    font-size: 1.1rem;
+}
 
 /* Only the direct div child of the .main-banner will be affected*/
 .main-banner>div {
