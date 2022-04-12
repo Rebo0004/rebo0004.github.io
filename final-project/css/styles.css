@@ -158,7 +158,6 @@ h1 {
 .main-banner p {
     color: #fff;
     font-size: .9rem;
-    line-height: 1.5rem;
     padding-top: 20px;
 }
 
@@ -209,11 +208,11 @@ h2 {
     margin-bottom: 20px;
 }
 
-/* This basic style is gonna be applyied for all the paragraphs of the website */
+/* This basic style is gonna be applyied for all the paragraphs of the website, apply other properties more specifically */
 p {
     font-size: .9rem;
     font-weight: 500;
-    line-height: 1.3rem;
+    line-height: 1.5rem;
     padding-bottom: 1rem;
 }
 
