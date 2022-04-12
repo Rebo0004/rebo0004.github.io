@@ -170,8 +170,8 @@ h1 {
 /* In this case it can not be direct child, because p is inside another div. */ 
 .main-banner p {
     color: #fff;
-    font-size: .9rem;
     padding-top: 20px;
+    font-weight: 500;
 }
 
 /* this properties will affect all the buttons of the webpage. The inline-block will allow add margin to the anchor tag*/
@@ -257,7 +257,7 @@ h2 {
 /* This basic style is gonna be applyied for all the paragraphs of the website, apply other properties more specifically */
 p {
     font-size: .9rem;
-    font-weight: 500;
+    font-weight: 600;
     line-height: 1.5rem;
     padding-bottom: 1rem;
 }
