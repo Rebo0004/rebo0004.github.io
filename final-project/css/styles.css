@@ -292,9 +292,39 @@ h3 {
 
 /* OUR VISION SECTION */ 
 
-.full-image {
+.vision {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
+/* Width and max-width creates a responsive image */
+.vision .full-image {  
     width: 100%;
-    color: white;
+}
+
+.vision img {
+    max-width: 100%;
+    grid-column: 1/2;
+    grid-row: 1;
+}
+
+/* Margin auto centers the content vertically in the middle*/ 
+.vision div {
+    grid-column: 1/2;
+    grid-row: 1;
+    margin: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.vision h3 {
+    color: #fff;
+}
+
+.vision p {
+    color: #fff;
+    font-weight: 500;
 }
 
 /* Correct this one because it applyies the padding to the image too
@@ -302,6 +332,7 @@ div {
     padding: 15px;
 }*/
 
+/* The rgba property will give the blueish colour to the button*/
 .dark-secondary {
     background-color: rgba(34,34,34,0.8);
     color: #fff;
