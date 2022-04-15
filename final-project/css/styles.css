@@ -261,7 +261,7 @@ h2 {
 
 /* This basic style is gonna be applyied for all the paragraphs of the website, apply other properties more specifically */
 p {
-    font-size: .9rem;
+    font-size: 1rem;
     font-weight: 500;
     line-height: 1.5rem;
     padding-bottom: 1rem;
@@ -376,7 +376,6 @@ hr {
 label {
     display: inline-block;
     font-weight: 500;
-    font-size: .9rem;
     margin-bottom: 5px;
 }
 
@@ -417,7 +416,6 @@ textarea {
 table, td, th {
     border: 1px solid #222;
     padding: 15px;
-    font-size: .9rem;
 }
 
 /* border-collapse changes all the bordes of the table into a single one, saw this in w3shcools https://www.w3schools.com/css/css_table.asp*/
@@ -462,6 +460,12 @@ footer a {
         width: 80%;
     }
 
+    /* Its important to apply this font properties just once to make it easy to control */
+    p {
+        font-size: .9rem;
+        line-height: 1.2rem;
+    }
+
     /* HEADER */ 
     nav {
         flex-direction: row;
@@ -480,7 +484,20 @@ footer a {
     }
 
     /* ABOUT US */
+    .about {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
 
+    .about-image {
+        grid-column: 1/2;
+    }
+
+    .about-text {
+        grid-column: 2/3;
+        margin-left: 10px;
+    }
 
 
 
