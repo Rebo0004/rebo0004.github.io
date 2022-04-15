@@ -146,6 +146,10 @@ nav a:active {
     color: #222;
 }
 
+nav a:active::after {
+    background-color: #c78c06;
+}
+
 /* Needs the type to not change other inputs */
 input[type='text'] {
     padding: 10px;
@@ -416,7 +420,7 @@ table, td, th {
     font-size: .9rem;
 }
 
-/* This property changes all the bordes of the table into a single one, saw this in w3shcools https://www.w3schools.com/css/css_table.asp*/
+/* border-collapse changes all the bordes of the table into a single one, saw this in w3shcools https://www.w3schools.com/css/css_table.asp*/
 table {
     border-collapse: collapse;
     width: 100%;
@@ -442,8 +446,42 @@ footer {
 /* The weight it need to be defined like this because it has more level of specificity, if its included just in footer it won't change*/
 footer p {
     font-weight: 400;
+    font-size: .8rem;
 }
 
 footer a {
-    text-decoration: none;
+    color: #c78c06;
+}
+
+
+/* STARTS DESKTOP LAYOUT*/
+@media screen and (min-width: 760px) {
+
+    /* By changing this width all the page will be affected because it is a repeated class in the html structure */
+    .wrapper {
+        width: 80%;
+    }
+
+    /* HEADER */ 
+    nav {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: none;
+        justify-content: space-evenly;
+    }
+
+    .dark-background {
+        width: 80%;
+    }
+
+    /* ABOUT US */
+
+
+
+
 }
