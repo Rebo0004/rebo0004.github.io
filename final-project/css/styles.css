@@ -540,4 +540,31 @@ footer a {
     .color-section {
         margin-bottom: 0px;
     }
+
+    /* CONTACT US SECTION */
+    /* Using grid area will be easier to order this section*/
+
+    /* If you dont use repeat instead 1fr, 1fr the space of the second row will be the same of the first row*/
+    .contact {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+        "message map"
+        "hours hours"
+    }
+
+    .message {
+        grid-area: message;
+    }
+    .hours {
+        grid-area: hours;
+    }
+    .map {
+        grid-area: map;
+    }
+
+    form {
+        padding-right: 10px;
+    }
+
 }
