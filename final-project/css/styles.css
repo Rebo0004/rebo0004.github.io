@@ -466,7 +466,7 @@ footer a {
         line-height: 1.2rem;
     }
 
-    /* HEADER */ 
+    /* HEADER SECTION*/ 
     nav {
         flex-direction: row;
         justify-content: space-evenly;
@@ -483,7 +483,7 @@ footer a {
         width: 80%;
     }
 
-    /* ABOUT US */
+    /* ABOUT US SECTION*/
     .about {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -499,6 +499,19 @@ footer a {
         margin-left: 10px;
     }
 
+    /* OUR SERVICES SECTION*/
 
+    /* Its necessary to use flex instead of grid because the way is differently divided in the mockup the first row is 50%, 50% and second row is 33.33%, 33.33%, 33.33% */
+    .services {
+        display: flex;
+        flex-wrap: wrap;
+    }
 
+    .digital, .marketing {
+        flex-basis: 50%;
+    }
+
+    .video, .web, .print {
+        flex-basis: calc(33.33%);
+    }
 }
