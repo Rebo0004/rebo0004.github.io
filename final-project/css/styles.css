@@ -518,8 +518,24 @@ footer a {
         flex-basis: calc(33.33% - 8px);
     }
 
-    .services a {
-        vertical-align: bottom;
+    .service div {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+
+    .service h3 {
+        grid-row: 1/2;
+    }
+
+    .service p {
+        grid-row: 2/4;
+    }
+
+    .service a {
+        width: 100%;
+        text-align: center;
+        grid-row: 4/5;
     }
 
     /* OUR TEAM SECTION */
