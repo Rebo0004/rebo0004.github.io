@@ -169,7 +169,7 @@ h1 {
     color: #fff;
     font-size: 3.8rem;
     font-weight: 700;
-    line-height: 6rem;
+    line-height: 5rem;
 }
 
 /* In this case it can not be direct child, because p is inside another div. */ 
@@ -212,7 +212,10 @@ h1 {
 /* Having the same grid-row value overlaps the content */
 img {
     max-width: 100%;
-    height: auto;
+
+}
+
+.flex-container {
     grid-column: 1/2;
     grid-row: 1;
 }
@@ -496,9 +499,10 @@ footer a {
     }
 
     nav a {
-        padding: 15px 30px;
+        padding: 15px 25px;
     }
 
+    /* It needs to be changed like this because in the mobile section the width was declared with the flex-basis */
     nav .search-bar {
         flex-basis: calc(20% - 0px);
     }
@@ -506,6 +510,22 @@ footer a {
     nav .search-button {
         flex-basis: calc(5% - 0px);
     }
+
+    .dark-background {
+        width: 80%;
+    }
+    
+    .main-banner {
+        height: 500px;
+    }
+
+    .flex-container {
+        display: flex;
+        align-items: center;
+        /* This property will hide the parts of the image that exceed the height define, found it here https://www.w3schools.com/cssref/pr_pos_overflow.asp*/
+        overflow: hidden;
+    }
+
 
     /* ABOUT US SECTION*/
     .about {
@@ -557,6 +577,13 @@ footer a {
         font-size: 1.7rem;
     }
 
+    /* OUR VISION SECTION */
+
+
+    .vision {
+        height: 300px;
+    }
+
     /* OUR TEAM SECTION */
     .team {
         display: grid;
@@ -585,7 +612,7 @@ footer a {
     /* CONTACT US SECTION */
     /* Using grid area will be easier to order this section*/
 
-    /* If you don't use repeat instead 1fr, 1fr the space of the second row will be the same of the first row*/
+    /* If I don't use repeat instead 1fr, 1fr the space of the second row will be the same of the first row*/
     .contact {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -603,6 +630,7 @@ footer a {
     .map {
         grid-area: map;
     }
+
     form {
         padding-right: 10px;
     }

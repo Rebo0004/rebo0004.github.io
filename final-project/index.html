@@ -33,12 +33,15 @@
             </nav>
         </div>
         <div class="main-banner responsive-image" id="home">
-            <img src="images/main-banner.jpg" alt="main banner">
+            <!-- This div and class will allow to adjust the heigth of the image into its own container and center it in the desktop version-->
+            <div class="flex-container">
+                <img src="images/main-banner.jpg" alt="main banner">
+            </div>
             <!-- The first div will have the black background and the second one the invisible box to contain and center the other elements-->
-            <div class="dark-background">
+            <div class="dark-background">       
                 <!--<div>-->
                     <h1>Welcome to Three Star Media</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam adipisci vitae, facere dolore doloribus necessitatibus vero corporis repellendus vel praesentium repellat. Veniam distinctio accusamus iste totam harum iure consequuntur deserunt?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam adipisci vitae, facere dolore doloribus necessitatibus vero corporis repellendus vel praesentium repellat acere dolore. </p>
                     <a href="#contact" class="btn secondary">Connect with us<i class="fa-solid fa-caret-right"></i></a>
                 <!--</div>-->
             </div>
@@ -111,7 +114,9 @@
         <!--Contains Our Vision section within a div that will have a background of a full image, the wrapper will maintain the text aligned and center-->
         <section class="full-image vision">
             <!--<div>-->
-                <img src="images/vision.jpg" alt="vision">
+                <section class="flex-container">
+                    <img src="images/vision.jpg" alt="vision">
+                </section>
                 <div class="wrapper">
                     <h3>Our Vision</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam velit blanditiis perferendis quae dignissimos dicta earum aut ex soluta, eligendi eveniet, aliquam voluptas id quis tempore in quo omnis dolorem!</p>
