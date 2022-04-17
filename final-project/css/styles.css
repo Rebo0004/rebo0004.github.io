@@ -215,7 +215,7 @@ img {
 
 }
 
-.flex-container {
+.main-banner .flex-container {
     grid-column: 1/2;
     grid-row: 1;
 }
@@ -232,17 +232,6 @@ img {
     padding-left: 20px;
     padding-right: 20px;
 }
-
-/*
-.dark-background div {
-    grid-column: 1/2;
-    grid-row: 1;
-    width: 100%;
-    height: 80%;
-    margin: auto;
-    background-color: #fff ;
-    padding: 10px;
-}*/
 
 /* ABOUT US SECTION */
 
@@ -305,6 +294,9 @@ h3 {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
+    height: 300px;
+    align-items: center;
+    overflow: hidden;
 }
 
 /* Width and max-width creates a responsive image */
@@ -322,9 +314,6 @@ h3 {
 .vision div {
     grid-column: 1/2;
     grid-row: 1;
-    margin: auto;
-    padding-left: 20px;
-    padding-right: 20px;
 }
 
 .vision h3 {
@@ -336,10 +325,12 @@ h3 {
     font-weight: 500;
 }
 
-/* Correct this one because it applyies the padding to the image too
-div {
-    padding: 15px;
-}*/
+.vision .flex-container {
+    display: flex;
+    align-items: center;
+    /* This property will hide the parts of the image that exceed the height define, found it here https://www.w3schools.com/cssref/pr_pos_overflow.asp*/
+    overflow: hidden;
+}
 
 /* The rgba property will give the blueish colour to the button*/
 .dark-secondary {
@@ -482,7 +473,6 @@ footer a {
     .menu {
         display: flex;
         flex-direction: row;
-        flex-wrap: none;
         justify-content: space-evenly;
     }
 
@@ -578,7 +568,6 @@ footer a {
     }
 
     /* OUR VISION SECTION */
-
 
     .vision {
         height: 300px;

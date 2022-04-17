@@ -26,7 +26,7 @@
                     <li class="menu"><a href="#team">Team</a></li>
                     <li class="menu"><a href="#contact">Contact</a></li>
                 </ul>
-                <!--<div class="search-bar">-->
+                <!--<div class="search-bar"> It was eliminated because in the desktop version the direct childs of the nav nedded it to be into the flex-->
                 <input class=search-bar type="text" placeholder="Search" name="search">
                 <button class=search-button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
                 <!--</div>-->
@@ -111,45 +111,41 @@
                 </div>
             </section>
         </div>
-        <!--Contains Our Vision section within a div that will have a background of a full image, the wrapper will maintain the text aligned and center-->
+        <!--Contains Our Vision section within a div that will have a background of a full image, the wrapper will maintain the text aligned and center. The flex-container will cut and center the image vertically-->
         <section class="full-image vision">
-            <!--<div>-->
-                <section class="flex-container">
-                    <img src="images/vision.jpg" alt="vision">
-                </section>
-                <div class="wrapper">
-                    <h3>Our Vision</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam velit blanditiis perferendis quae dignissimos dicta earum aut ex soluta, eligendi eveniet, aliquam voluptas id quis tempore in quo omnis dolorem!</p>
-                    <a href="#" class="btn dark-secondary">Learn More<i class="fa-solid fa-caret-right"></i></a>
-                </div>
-            <!--</div>-->
+            <div class="flex-container">
+                <img src="images/vision.jpg" alt="vision">
+            </div>
+            <div class="wrapper">
+                <h3>Our Vision</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam velit blanditiis perferendis quae dignissimos dicta earum aut ex soluta, eligendi eveniet, aliquam voluptas id quis tempore in quo omnis dolorem!</p>
+                <a href="#" class="btn dark-secondary">Learn More<i class="fa-solid fa-caret-right"></i></a>
+            </div>
         </section>
         <!-- Contains Our Team section with two team members inside-->
-        <div id="team">
-            <section class="wrapper" id="team">
-                <h2>Our Team</h2>
-                <div class="team">
-                    <div class="responsive-image">
-                        <img src="images/john.jpg" alt="john">
-                    </div>
-                    <div class="color-section team-member">
-                        <h3>John Doe</h3>
-                        <p class="subtitle">CEO and Co-owner</p>
-                        <hr>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo consequuntur perferendis, dolor commodi esse consectetur earum dolores optio necessitatibus beatae! Veniam autem sapiente blanditiis unde asperiores quia ipsam aliquid aperiam?</p>
-                    </div>
-                    <div class="responsive-image">
-                        <img src="images/bob.jpg" alt="bob">
-                    </div>
-                    <div class="color-section team-member">
-                        <h3>Bob Rite</h3>
-                        <p class="subtitle">CEO and Co-owner</p>
-                        <hr>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo consequuntur perferendis, dolor commodi esse consectetur earum dolores optio necessitatibus beatae! Veniam autem sapiente blanditiis unde asperiores quia ipsam aliquid aperiam?</p>
-                    </div>
+        <section class="wrapper" id="team">
+            <h2>Our Team</h2>
+            <div class="team">
+                <div class="responsive-image">
+                    <img src="images/john.jpg" alt="john">
                 </div>
-            </section>
-        </div>
+                <div class="color-section team-member">
+                    <h3>John Doe</h3>
+                    <p class="subtitle">CEO and Co-owner</p>
+                    <hr>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo consequuntur perferendis, dolor commodi esse consectetur earum dolores optio necessitatibus beatae! Veniam autem sapiente blanditiis unde asperiores quia ipsam aliquid aperiam?</p>
+                </div>
+                <div class="responsive-image">
+                    <img src="images/bob.jpg" alt="bob">
+                </div>
+                <div class="color-section team-member">
+                    <h3>Bob Rite</h3>
+                    <p class="subtitle">CEO and Co-owner</p>
+                    <hr>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo consequuntur perferendis, dolor commodi esse consectetur earum dolores optio necessitatibus beatae! Veniam autem sapiente blanditiis unde asperiores quia ipsam aliquid aperiam?</p>
+                </div>
+            </div>
+        </section>   
         <!-- Contains Contact section with a form, a google map and a table within 3 differnt divs and classes to change the order in the css grid (desktop version)-->
         <div>
             <section class="wrapper" id="contact">  
@@ -213,6 +209,5 @@
             <p>All images are taken from <a href="https://unsplash.com/" target="_blank">Unplash</a></p>
         </div>
     </footer>
-
 </body>
 </html>
