@@ -291,20 +291,13 @@ h3 {
     overflow: hidden;
 }
 
-/* Width and max-width creates a responsive image */
-.vision .full-image {  
-    width: 100%;
-}
-
-.vision img {
-    max-width: 100%;
-    grid-column: 1/2;
-    grid-row: 1;
-}
-
-.vision div {
-    grid-column: 1/2;
-    grid-row: 1;
+/* Cover background size will show the 100% of the image. The position values will accurate the image to themock-up*/
+.background-vision {
+    background-color: #222;
+    background-image: url(../images/vision.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 -20px;
 }
 
 .vision h3 {
@@ -314,13 +307,6 @@ h3 {
 .vision p {
     color: #fff;
     font-weight: 500;
-}
-
-.vision .flex-container {
-    display: flex;
-    align-items: center;
-    /* This property will hide the parts of the image that exceed the height define, found it here https://www.w3schools.com/cssref/pr_pos_overflow.asp*/
-    overflow: hidden;
 }
 
 /* The rgba property will give the blueish colour to the button*/
@@ -563,8 +549,8 @@ footer a {
 
     /* OUR VISION SECTION */
 
-    .vision {
-        height: 300px;
+    .background-vision {
+        background-position: 0 -200px;        
     }
 
     /* OUR TEAM SECTION */
