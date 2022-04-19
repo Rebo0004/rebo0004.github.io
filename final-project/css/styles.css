@@ -425,9 +425,12 @@ thead {
 }
 
 /* This property will help to make responsive the map */
-map {
+.map iframe {
     width: 100%;
+    height: 450px;
+    border: 0;
 }
+
 
 /* FOOTER SECTION */
 
